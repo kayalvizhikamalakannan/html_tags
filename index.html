@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+    <style>
+    div {
+        background-color: green; 
+        height: 100px;
+        width: 5000px;
+        padding: 20px 20px;
+       }
+
+       .btn{
+    background-color: pink;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 0;
+    height: 0;
+    left: var(--xPos); 
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+       </style>
+</head>
+<body>
+    <h1 align="center">HTML Tags</h1>
+    <div>
+    <button onclick="document.location='a_tag.html'" class="btn">A tag</button>
+    <button onclick="document.location='command_tag.html'" class="btn">Command Tag</button>
+    <button onclick="document.location='document_type_tag.html'" class="btn">Document Type Tag</button>
+    <button onclick="document.location='abbr.html'" class="btn">Abbr Tag</button>
+    <button onclick="document.location='acronym.html'" class="btn">Acronym Tag</button>
+    <button onclick="document.location='address.html'" class="btn">Address Tag</button>
+    <button onclick="document.location='applet.html'" class="btn">Applet Tag</button>
+    <button onclick="document.location='area.html'" class="btn">Area Tag</button>
+    <button onclick="document.location='article_tag.html'" class="btn">Article Tag</button>
+    <button onclick="document.location='aside_tag.html'" class="btn">Aside Tag</button>
+    <button onclick="document.location='audio_tag.html'" class="btn">Audio Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='b_tag.html'" class="btn">B Tag</button>
+    <button onclick="document.location='base_tag.html'" class="btn">Base Tag</button>
+    <button onclick="document.location='basefont_tag.html'" class="btn">BaseFont Tag</button>
+    <button onclick="document.location='bdi_tag.html'" class="btn">Bdi Tag</button>
+    <button onclick="document.location='bdo_tag.html'" class="btn">Bdo Tag</button>
+    <button onclick="document.location='big_tag.html'" class="btn">Big Tag</button>
+    <button onclick="document.location='blockquote_tag.html'" class="btn">Blockquote Tag</button>
+    <button onclick="document.location='body_tag.html'" class="btn">Body Tag</button>
+    <button onclick="document.location='br_tag.html'" class="btn">Br Tag</button>
+    <button onclick="document.location='button_tag.html'" class="btn">Button Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='canvas_tag.html'" class="btn">Canvas Tag</button>
+    <button onclick="document.location='caption_tag.html'" class="btn">Caption Tag</button>
+    <button onclick="document.location='center1.html.html'" class="btn">Center Tag</button>
+    <button onclick="document.location='cite_tag.html'" class="btn">Cite Tag</button>
+    <button onclick="document.location='code_tag.html'" class="btn">Code Tag</button>
+    <button onclick="document.location='col_tag.html'" class="btn">Col Tag</button>
+    <button onclick="document.location='colgroup_tag.html'" class="btn">Colgroup Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='data_tag.html'" class="btn">Data Tag</button>
+    <button onclick="document.location='datalist_tag.html'" class="btn">DataList Tag</button>
+    <button onclick="document.location='dd_tag.html'" class="btn">DD Tag</button>
+    <button onclick="document.location='del_tag.html'" class="btn">Del Tag</button>
+    <button onclick="document.location='details_tag.html'" class="btn">Details Tag</button>
+    <button onclick="document.location='dfn_tag.html'" class="btn">Dfn Tag</button>
+    <button onclick="document.location='dialog_tag.html'" class="btn">Dialog Tag</button>
+    <button onclick="document.location='dir_tag.html'" class="btn">Dir Tag</button>
+    <button onclick="document.location='div_tag.html'" class="btn">Div Tag</button>
+    <button onclick="document.location='dl_tag.html'" class="btn">Dl Tag</button>
+    <button onclick="document.location='dt_tag.html'" class="btn">Dt Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='em_tag.html'" class="btn">Em Tag</button>
+    <button onclick="document.location='embed_tag.html'" class="btn">Embed Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='fieldset_tag.html'" class="btn">Fieldset Tag</button>
+    <button onclick="document.location='figcaption_tag.html'" class="btn">FigCaption Tag</button>
+    <button onclick="document.location='figure_tag.html'" class="btn">Figure Tag</button>
+    <button onclick="document.location='font_tag.html'" class="btn">Font Tag</button>
+    <button onclick="document.location='footer_tag.html'" class="btn">Footer Tag</button>
+    <button onclick="document.location='form_tag.html'" class="btn">Form Tag</button>
+    <button onclick="document.location='frame_tag.html'" class="btn">Frame Tag</button>
+    <button onclick="document.location='frameset_tag.html'" class="btn">FrameSet Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='h1toh6_tag.html'" class="btn">H1 to H6 Tag</button>
+    <button onclick="document.location='head_tag.html'" class="btn">Head Tag</button>
+    <button onclick="document.location='header_tag.html'" class="btn">Header Tag</button>
+    <button onclick="document.location='hr_tag.html'" class="btn">Hr Tag</button>
+    <button onclick="document.location='html_tag.html'" class="btn">HTML Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='i_tag.html'" class="btn">I Tag</button>
+    <button onclick="document.location='iframe_tag.html'" class="btn">IFrame Tag</button>
+    <button onclick="document.location='img_tag.html'" class="btn">Img Tag</button>
+    <button onclick="document.location='input_tag.html'" class="btn">Input Tag</button>
+    <button onclick="document.location='ins_tag.html'" class="btn">Ins Tag</button>
+    <button onclick="document.location='kbd.html'" class="btn">KBD Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='label.html'" class="btn">Label Tag</button>
+    <button onclick="document.location='legend_tag.html'" class="btn">Legend Tag</button>
+    <button onclick="document.location='li_tag.html'" class="btn">LI Tag</button>
+    <button onclick="document.location='link_tag.html'" class="btn">Link Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='main_tag.html'" class="btn">Main Tag</button>
+    <button onclick="document.location='map_tag.html'" class="btn">Map Tag</button>
+    <button onclick="document.location='mark_tag.html'" class="btn">Mark Tag</button>
+    <button onclick="document.location='meta_tag.html'" class="btn">Meta Tag</button>
+    <button onclick="document.location='meter_tag.html'" class="btn">Meter Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='nav_tag.html'" class="btn">Nav Tag</button>
+    <button onclick="document.location='noframes_tag.html'" class="btn">NoFrames Tag</button>
+    <button onclick="document.location='noscript_tag.html'" class="btn">NScript Tag</button>
+    <button onclick="document.location='object_tag.html'" class="btn">Object Tag</button>
+    <button onclick="document.location='ol_tag.html'" class="btn">OL Tag</button>
+    <button onclick="document.location='optgroup.html'" class="btn">Optgroup Tag</button>
+    <button onclick="document.location='option_tag.html'" class="btn">Option Tag</button>
+    <button onclick="document.location='output_tag.html'" class="btn">Output Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='p_tag.html'" class="btn">P Tag</button>
+    <button onclick="document.location='param_tag.html'" class="btn">Param Tag</button>
+    <button onclick="document.location='picture_tag.html'" class="btn">Picture Tag</button>
+    <button onclick="document.location='pre_tag.html'" class="btn">Pre Tag</button>
+    <button onclick="document.location='progress_tag.html'" class="btn">Progress Tag</button>
+    <button onclick="document.location='q_tag.html'" class="btn">Q Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='rp_tag.html'" class="btn">RP Tag</button>
+    <button onclick="document.location='rt_tag.html'" class="btn">RT Tag</button>
+    <button onclick="document.location='ruby_tag.html'" class="btn">Ruby Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='s_tag.html'" class="btn">S Tag</button>
+    <button onclick="document.location='samp_tag.html'" class="btn">Samp Tag</button>
+    <button onclick="document.location='script_tag.html'" class="btn">Script Tag</button>
+    <button onclick="document.location='section_tag.html'" class="btn">Section Tag</button>
+    <button onclick="document.location='select_tag.html'" class="btn">Select Tag</button>
+    <button onclick="document.location='small_tag.html'" class="btn">Small Tag</button>
+    <button onclick="document.location='source_tag.html'" class="btn">Source Tag</button>
+    <button onclick="document.location='span_tag.html'" class="btn">Span Tag</button>
+    <button onclick="document.location='strike_tag.html'" class="btn">Strike Tag</button>
+    <button onclick="document.location='strong_tag.html'" class="btn">Strong Tag</button>
+    <button onclick="document.location='style_tag.html'" class="btn">Style Tag</button>
+    <button onclick="document.location='sub_tag.html'" class="btn">Sub Tag</button>
+    <button onclick="document.location='summary_tag.html'" class="btn">Summary Tag</button>
+    <button onclick="document.location='sup_tag.html'" class="btn">Sup Tag</button>
+    <button onclick="document.location='svg_tag.html'" class="btn">Svg Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='table_tag.html'" class="btn">Table Tag</button>
+    <button onclick="document.location='tbody_tag.html'" class="btn">TBody Tag</button>
+    <button onclick="document.location='td_tag.html'" class="btn">TD Tag</button>
+    <button onclick="document.location='template_tag.html'" class="btn">Template Tag</button>
+    <button onclick="document.location='textarea_tag.html'" class="btn">TextArea Tag</button>
+    <button onclick="document.location='tfoot_tag.html'" class="btn">TFoot Tag</button>
+    <button onclick="document.location='th_tag.html'" class="btn">TH Tag</button>
+    <button onclick="document.location='thead_tag.html'" class="btn">THead Tag</button>
+    <button onclick="document.location='time_tag.html'" class="btn">Time Tag</button>
+    <button onclick="document.location='title_tag.html'" class="btn">Title Tag</button>
+    <button onclick="document.location='tr_tag.html'" class="btn">TR Tag</button>
+    <button onclick="document.location='track_tag.html'" class="btn">Track Tag</button>
+    <button onclick="document.location='tt_tag.html'" class="btn">TT Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='u_tag.html'" class="btn">U Tag</button>
+    <button onclick="document.location='ul_tag.html'" class="btn">UL Tag</button></div>
+    <br><br><div>
+    <button onclick="document.location='var.html'" class="btn">Var Tag</button>
+    <button onclick="document.location='video_tag.html'" class="btn">Video Tag</button>
+    <button onclick="document.location='wbr_tag.html'" class="btn">WBR Tag</button></div>
+</body>
+</html>
